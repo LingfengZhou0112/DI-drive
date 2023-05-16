@@ -88,4 +88,5 @@ class BaseCarlaPolicy(Policy):
         self._model.load_state_dict(state_dict['model'], strict=True)
 
     def _load_state_dict_eval(self, state_dict: Dict[str, Any]) -> None:
-        self._model.load_state_dict(state_dict['model'], strict=True)
+        # self._model.load_state_dict(state_dict['model'], strict=True)
+        self._model.load_state_dict(state_dict, strict=True)

@@ -14,7 +14,7 @@ from demo.lbc.lbc_env_wrapper import LBCEnvWrapper
 
 lbc_config = dict(
     env=dict(
-        env_num=5,
+        env_num=1,
         simulator=dict(
             town='Town01',
             disable_two_wheels=True,
@@ -46,7 +46,7 @@ lbc_config = dict(
     ),
     server=[dict(carla_host='localhost', carla_ports=[9000, 9002, 2])],
     policy=dict(
-        ckpt_path='model-20.th',
+        ckpt_path='model-10.th',
         eval=dict(
             evaluator=dict(
                 suite='FullTown01-v3',
